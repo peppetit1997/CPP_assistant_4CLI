@@ -1,8 +1,6 @@
 import curses
 from curses import wrapper
 
-
-
 import openai
 from apikey import openaiApikey
 openai.api_key = openaiApikey
@@ -24,15 +22,18 @@ def main(stdscr):
         prompt = stdscr.getstr().decode("utf-8")
         curses.noecho()
         if (str(prompt) == "Q" or str(prompt) == "q"):
+        #needed to close the window as specified by the curses docs
             curses.nocbreak()
-            curses.echo()
+            curses.noecho()
             curses.endwin()
             stdscr.refresh()
             return
         else:
+            #prompting with the query function (definition underneath)
             stdscr.addstr(query(prompt))
             stdscr.refresh()
 
+#This function interact with open AI to generate a respnse given a prompt
 def query(prompt):
     # check if storage already exists
     PERSIST_DIR = "./storage"
