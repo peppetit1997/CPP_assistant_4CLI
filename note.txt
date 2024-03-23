@@ -1,2 +1,0 @@
-Pour le venv: source cpp_assistantVenv/bin/activate
-pour push: git push -u origin main
