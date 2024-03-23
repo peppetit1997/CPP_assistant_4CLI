@@ -1,6 +1,6 @@
 # CPP_assistant_4CLI
 
-This project implements a simple Command Line Interface (CLI) chat application that interacts with the OpenAI API to provide assistance with C++ programming queries.
+This project implements a simple Command Line Interface (CLI) chat application that interacts with the OpenAI API to provide assistance with C++ programming queries. To use just put a txt file containing your favorite text book on the matter inside a data directory.
 
 ## Prerequisites
 

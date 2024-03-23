@@ -1,0 +1,28 @@
+apikey.py
+storage/
+data/
+# Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Virtual Environment
+venv/
+ENV/
+
+# Curses module
+.curses_build_config.py
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+Pour le venv: source cpp_assistantVenv/bin/activate
